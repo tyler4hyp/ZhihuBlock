@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+	    body{
+	    	width: 150px;
+	    	height: 100px;
+	    }
+		.outer{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 100px;
+	        height: 50px;
+	        border-radius: 25px;
+	        background-color: rgba(0,184,0,0.8);
+		}
+		.inner{
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			width: 48px;
+	        height: 48px;
+	        border-radius: 50%;
+	        background: white;
+	        box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+		}
+		.outerClose{
+			background: rgba(255,255,255,0.4);
+			border:2px solid rgba(0,0,0,0.15);
+			border-radius: 27px;
+		}
+		.innerClose{
+			left: 1px;
+		}
+	</style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
